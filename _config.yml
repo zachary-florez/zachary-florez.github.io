@@ -21,7 +21,7 @@ repository               : "zachary-florez/zachary-florez.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "IMG_0920-Cropped.JPG"
+  avatar           : "images/IMG_0920-Cropped.JPG"
   name             : "Zachary Florez"
   pronouns         : "he/him"  
   bio              : "Software Engineer"
