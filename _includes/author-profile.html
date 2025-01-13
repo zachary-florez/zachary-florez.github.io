@@ -39,6 +39,9 @@
       {% if author.degree %}
       <li class="author__desktop"><i class="fa-solid fa-graduation-cap icon-pad-right" aria-hidden="true"></i>{{ author.degree }}</li>
       {% endif %}
+      {% if author.college %}
+      <li class="author__desktop"><i class="fa-solid fa-school icon-pad-right" aria-hidden="true"></i>{{ author.college }}</li>
+      {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.arxiv %}
