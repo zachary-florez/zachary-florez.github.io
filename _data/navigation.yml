@@ -5,23 +5,36 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Experience"
+    url: /experience/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Projects"
+    url: /projects/    
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
+  - title: "Inclusion. Service. Unity."
+    url: /isu/ 
     
   - title: "Guide"
     url: /markdown/
+
+  # - title: "Portfolio"
+  #   url: /portfolio/
+        
+  # - title: "Blog Posts"
+  #   url: /year-archive/
+    
+  # - title: "CV"
+  #   url: /cv/
+
+
+# experience_category:
+#   experience:
+#     title: 'Experience'
+
+# projects_category:
+#   projects:
+#     title: 'Projects'
+
+# involvement_category:
+#   experience:
+#     title: 'Inclusion. Service. Unity.'
