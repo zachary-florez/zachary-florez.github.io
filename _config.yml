@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Zachary Florez"
 title_separator          : "-"
-name                     : &name "Zachary Florez"
+name                     : &name "About"
 description              : &description "personal description"
 url                      : https://zachary-florez.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
