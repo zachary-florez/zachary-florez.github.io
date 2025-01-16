@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Writing Code, Building the Future"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
@@ -12,14 +12,17 @@ pre {
 }
 </style>
 
+
+<h1>Writing <span style="color: #4CAF50;">Code</span>, Building the <span style="color: #1E88E5;">Future</span></h1>
+
 <pre>
+
 
 ▗▖ ▗▖▗▞▀▚▖█ █  ▄▄▄    ▗▖ ▗▖ ▄▄▄   ▄▄▄ █    ▐▌
 ▐▌ ▐▌▐▛▀▀▘█ █ █   █   ▐▌ ▐▌█   █ █    █    ▐▌
 ▐▛▀▜▌▝▚▄▄▖█ █ ▀▄▄▄▀   ▐▌ ▐▌▀▄▄▄▀ █    █ ▗▞▀▜▌
 ▐▌ ▐▌     █ █         ▐▙█▟▌           █ ▝▚▄▟▌
                                               
-
 </pre>
                                                      
 My name is Zach, I'm currently a Software Engineer in Phoenix, Arizona. In my current role at Amex I work on modernizing payments for merchants globally, building solutions to complex features for our in-memory computing payment engine.
