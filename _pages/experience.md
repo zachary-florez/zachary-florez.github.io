@@ -5,6 +5,8 @@ permalink: /experience/
 author_profile: true
 ---
 
+<title>Experience - Zachary Florez</title>
+
 
 <h3><span style="color: #016FD0;"><a href="https://www.americanexpress.com/" target="_blank" style="color: #016FD0;">American Express</a></span> - Software Engineer</h3>
 

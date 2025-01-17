@@ -1,14 +1,14 @@
 ---
-layout: archive
+# layout: archive
 title: ""
 permalink: /projects/
 author_profile: true
 ---
 
 
-<!-- Work experience -->
-
 <h1>Here are some projects I have worked on in the past 🚀</h1>
+
+<title>Projects - Zachary Florez</title>
 
 
 <h2>Direct Debit End Of Day API Balancing, <i>Java & Apache Spark</i></h2>

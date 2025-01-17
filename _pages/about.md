@@ -12,6 +12,7 @@ pre {
 }
 </style>
 
+<title>Zachary Florez</title>
 
 <h1>Writing <span style="color: #4CAF50;">Code</span>, Building the <span style="color: #1E88E5;">Future</span></h1>
 

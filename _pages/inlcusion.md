@@ -5,6 +5,8 @@ permalink: /isu/
 author_profile: true
 ---
 
+
+<title>Unity - Zachary Florez</title>
 {% include base_path %}
 
 <h2>Society of Hispanic Professional Engineers (<a href="https://shpe.org/" target="_blank">SHPE</a>)</h2>
@@ -12,9 +14,11 @@ author_profile: true
 
 SHPE is the largest association in the nation for Hispanics in STEM. SHPE changes lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness, access, support, and development. 
 
-With the University of Arizona Chapter, and the Phoenix Professional Chapter, we host programs that are designed to raise awareness of and access to STEM among Hispanic communities. We also directly serve K-12, undergraduate, and adult men, and women with experience with up-to-date technology, and improve the retention of Hispanic Engineering and applied sciences students in Arizona. 
+With the University of Arizona Chapter, and the Phoenix Professional Chapter, we host programs that are designed to raise awareness of and access to STEM among Hispanic communities. We also directly serve K-12, undergraduate, and adult men, and women with experience with up-to-date technology, and improve the retention of Hispanic Engineering and applied sciences to students in Arizona. 
   
-<img src="../images/2021.JPG" alt="2021 SHPE National Convention" width="350">   <img src="../images/2023.png" alt="2024 SHPE National Convention" width="400">   
+<!-- <img src="../images/2021.JPG" alt="2021 SHPE National Convention" width="350">   -->
+
+ <img src="../images/2023.png" alt="2024 SHPE National Convention" width="500">   
     
 
 <br>
@@ -23,12 +27,12 @@ With the University of Arizona Chapter, and the Phoenix Professional Chapter, we
 * <b>Green2Gether</b> is dedicated to engaging, educating, and inspiring colleagues in sustainability. 
 * We're committed to the challenge of transforming the workplace to foster a sustainable, healthy future for all people and our planet. 
 
-<img src="../images/IMG_1659.jpg" alt="Green2Gether" width="400">
+<img src="../images/IMG_1659.jpg" alt="Green2Gether" width="500">
 
-* <b>Give2Gether</b> is a year-round impact programme, focused on donating and volunteering. 
+* <b>Give2Gether</b> is a year-round impact program, focused on donating and volunteering. 
 
 
-<img src="../images/IMG_1660.jpg" alt="Serve2Gether" width="390" >  
+<img src="../images/IMG_1660.jpg" alt="Serve2Gether" width="500" >  
 
 <br>
 
