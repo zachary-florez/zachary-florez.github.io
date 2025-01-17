@@ -1,12 +1,12 @@
 ---
 layout: archive
-title: "🟰 Inclusion, Service, Unity 🟰"
+title: "Unity Through Action"
 permalink: /isu/
 author_profile: true
 ---
 
 
-<title>Unity - Zachary Florez</title>
+<title>Belonging - Zachary Florez</title>
 {% include base_path %}
 
 <h2>Society of Hispanic Professional Engineers (<a href="https://shpe.org/" target="_blank">SHPE</a>)</h2>
