@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "🟰 Inclusion. Service. Unity. 🟰"
+title: "🟰 Inclusion, Service, Unity 🟰"
 permalink: /isu/
 author_profile: true
 ---
@@ -16,7 +16,6 @@ With the University of Arizona Chapter, and the Phoenix Professional Chapter, we
   
 <img src="../images/2021.JPG" alt="2021 SHPE National Convention" width="350">   <img src="../images/2023.png" alt="2024 SHPE National Convention" width="400">   
     
-SHPE’s growth isn’t slowing down anytime soon. As we continue to expand our membership, programs, and partnerships, we’re guided by a clear mission, a bright vision, and the core values demonstrated by our founders.
 
 <br>
 

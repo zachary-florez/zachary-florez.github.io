@@ -14,8 +14,8 @@ main:
   - title: "Unity"
     url: /isu/ 
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
 
   # - title: "Portfolio"
   #   url: /portfolio/
