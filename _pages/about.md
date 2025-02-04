@@ -12,6 +12,18 @@ pre {
 }
 </style>
 
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0VWTM07VE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-W0VWTM07VE');
+  </script>
+</head>
+
 <title>Zachary Florez</title>
 
 <h1>Writing <span style="color: #4CAF50;">Code</span>, Building the <span style="color: #1E88E5;">Future</span></h1>
