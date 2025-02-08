@@ -44,6 +44,6 @@ collecting before we can proceed with our BAU Direct Debit Processing. I led the
 
  <h3><span style="color: #AB0520;"><a href="https://www.arizona.edu/" target="_blank" style="color: #AB0520;">The University of Arizona</a></span> - Computer Science Teaching Assistant</h3>
 
-[August 2021 - January 2022]
+[August 2021 - May 2022]
 * Help new university students understand computer science concepts, data structures and sorting algorithms.
 * Offer Office Hours, supplemental instruction, teach students during class, and grade code for execution, runtime and efficiency.
