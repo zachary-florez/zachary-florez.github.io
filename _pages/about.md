@@ -38,10 +38,14 @@ pre {
                                               
 </pre>
                                                      
-My name is Zach, I'm currently a Software Engineer in Phoenix, Arizona. In my current role at Amex I work on modernizing payments for merchants globally, building solutions to complex features for our in-memory computing payment engine.
+My name is Zach, I'm a Software Engineer based in Phoenix, Arizona, and I'm currently pursuing my Masters in Software Engineering from <a href="https://umich.edu/" style="color: #00274C;" target="_blank">the University of Michigan</a>.
 
 
-I earned my Bachelor of Science in Computer Science from the University of Arizona in 2022. I enjoy programming, learning, reading, playing sports, and staying active!
+In my current role at Amex I work on modernizing payments for merchants globally, building solutions to complex features for our billion dollar in-memory computing payment engine.
+
+
+I earned my Bachelor of Science in Computer Science from <a href="https://www.arizona.edu/" target="_blank" style="color: #AB0520;">the University of Arizona</a> in 2022 and I enjoy programming, playing sports, traveling, and staying active!
+
 
 <br>
 
