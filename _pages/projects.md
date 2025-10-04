@@ -10,10 +10,9 @@ author_profile: true
 
 <title>Projects - Zachary Florez</title>
 
-
 <h2>Direct Debit End Of Day API Balancing, <i>Java & Apache Spark</i></h2>
 
-At a high level, we have a 3 status levels for direct debit (DD) processing and at the end of the day my team and a sister team who deals with the DD Payments wanted to make sure both systems were balanced for that specific day to prevent Operational Risk Events. I developed the feature from start to finish to sum up the 3 different DD statuses split up by market and currency. I also developed opening (yesterday's closing) and closing (what is still pending for collection) amounts that we needed to balance along side.
+At a high level, we have a 3 status levels for direct debit (DD) processing and at the end of the day, my team and a adjacent team who deals with the DD Collections wanted to make sure both systems were balanced for that specific day to prevent Operational Risk Events. I developed the feature from start to finish to sum up the 3 different DD statuses split up by market and currency. I also developed opening (yesterday's closing) and closing (what is still pending for collection) amounts that we needed to balance along side.
 
 First I had to query and filter all our pending and paid tables, then created a new object daily that completed and held all the calculations per market and currency. I then stored that object with amounts back in another pending table for future access, and created a flag in a property file that if set to true, we call the API to balance between the two systems, setting our payload as what I extracted and calculated from our system. 
 
