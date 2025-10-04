@@ -7,6 +7,8 @@ author_profile: true
 
 <title>Experience - Zachary Florez</title>
 
+<h3><span style="color: #016FD0;"><a href="https://www.americanexpress.com/" target="_blank" style="color: #016FD0;">American Express</a></span> - Software Engineer II</h3> 
+
 [August 2022 - Present]
 * <u><i>Backend Software Engineer</i></u> on Global Merchant Accelerated Settlements - Payment Modernization working on our in-memory computing payment engine.
 
