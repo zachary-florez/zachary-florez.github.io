@@ -7,11 +7,8 @@ author_profile: true
 
 <title>Experience - Zachary Florez</title>
 
-
-<h3><span style="color: #016FD0;"><a href="https://www.americanexpress.com/us/merchant/member-benefits.html?extlink=MediaSEMBenefits&gad_source=1&gad_campaignid=1778629393&gbraid=0AAAAADiJt-5nprrulj-wJYDpxLlX6RqS-&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH5YiEElGTYjE8TQHet764JvjJbMcSUCLHjtjglbpqlyczI6LfVZ_NsaAlDLEALw_wcB&gclsrc=aw.ds" target="_blank" style="color: #016FD0;">American Express</a></span> - Software Engineer</h3>
-
 [August 2022 - Present]
-* <u><i>Backend Software Engineer</i></u> on Global Merchant Accelerated Settlements - Payment Modernization working on our in-memory computing payment engine. 
+* <u><i>Backend Software Engineer</i></u> on Global Merchant Accelerated Settlements - Payment Modernization working on our in-memory computing payment engine.
 
 * <b>2025 H1</b> - Reporting Standard. Applying a standard for all global reports by splitting up between business center and axiom paths so that the business can access specific and appropiate reports by market and region allowing them to follow the retention policy by market. Also enhancing readability and reducing the time spent searching through our current reports. 
 
@@ -47,3 +44,5 @@ collecting before we can proceed with our BAU Direct Debit Processing. I led the
 [August 2021 - May 2022]
 * Help new university students understand computer science concepts, data structures and sorting algorithms.
 * Offer Office Hours, supplemental instruction, teach students during class, and grade code for execution, runtime and efficiency.
+
+</div>

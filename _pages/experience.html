@@ -5,16 +5,96 @@ permalink: /experience/
 author_profile: true
 ---
 
+<!-- 
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0VWTM07VE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0VWTM07VE"></script> -->
+  <!-- <script> -->
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
   
-    gtag('config', 'G-W0VWTM07VE');
-  </script></head>
+    // gtag('config', 'G-W0VWTM07VE');
+  // </script></head> -->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfall Markdown Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .waterfall-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .waterfall-line {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            margin-bottom: 8px;
+            padding-left: 2px;
+            border-left: 2px solid transparent;
+        }
+        .waterfall-line.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .waterfall-line.heading {
+            border-left-color: #4a89dc;
+            padding-left: 10px;
+        }
+        .waterfall-line.paragraph {
+            border-left-color: #a0d468;
+        }
+        .waterfall-line.code {
+            border-left-color: #e9573f;
+            font-family: 'Courier New', monospace;
+            background-color: #f5f7fa;
+            padding: 8px;
+            border-radius: 3px;
+        }
+        .waterfall-line.blockquote {
+            border-left-color: #967adc;
+            padding-left: 15px;
+            font-style: italic;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2a3f54;
+        }
+        .controls {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 8px 16px;
+            background: #4a89dc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #3b70c2;
+        }
+        select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
 
 <!-- {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
