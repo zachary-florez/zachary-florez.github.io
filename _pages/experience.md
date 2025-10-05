@@ -46,5 +46,3 @@ collecting before we can proceed with our BAU Direct Debit Processing. I led the
 [August 2021 - May 2022]
 * Help new university students understand computer science concepts, data structures and sorting algorithms.
 * Offer Office Hours, supplemental instruction, teach students during class, and grade code for execution, runtime and efficiency.
-
-</div>
