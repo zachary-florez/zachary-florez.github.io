@@ -29,8 +29,13 @@ author:
   # employer         : "American Express"
   # uri              : ""
   email            : "zflorez44@gmail.com" 
-  degree           : "B.S. Computer Science"  
-  college           : "The University of Arizona"
+  education:
+    - degree       : "M.S. SW Engineering (in progress)"
+      school       : "The University of Michigan"
+      logo         : "/images/schools/michigan.svg"
+    - degree       : "B.S. Computer Science"
+      school       : "The University of Arizona"
+      logo         : "/images/schools/arizona.svg"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
