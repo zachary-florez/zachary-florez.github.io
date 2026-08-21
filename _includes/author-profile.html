@@ -32,8 +32,13 @@
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
 
-      {% if author.degree %}
-      <li class="author__desktop"><i class="fas fa-fw fa-graduation-cap icon-pad-right" aria-hidden="true"></i>{{ author.degree }}</li>
+      {% if author.education %}
+        {% for edu in author.education %}
+          <li class="author__desktop"><img src="{{ edu.logo | relative_url }}" alt="{{ edu.school }} logo" class="school-logo icon-pad-right" />{{ edu.degree }}</li>
+          <!-- <li class="author__desktop"><i class="fas fa-fw fa-school icon-pad-right" aria-hidden="true"></i>{{ edu.school }}</li> -->
+        {% endfor %}
+      {% elsif author.degree %}
+        <li class="author__desktop"><i class="fas fa-fw fa-graduation-cap icon-pad-right" aria-hidden="true"></i>{{ author.degree }}</li>
       {% endif %}
 
       {% if author.college %}

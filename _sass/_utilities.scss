@@ -502,3 +502,17 @@ a.reversefootnote {
   color: $danger-color;
   font-weight: bold;
 }
+
+/*
+   School logos (used in place of fa-graduation-cap in author profile)
+   ========================================================================== */
+
+/* .sidebar img has width:100%; this selector needs matching specificity
+   (class + element) to reliably override it without !important */
+.sidebar .school-logo {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Markdown Waterfall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .waterfall-line {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease-out;
+        }
+        .waterfall-line.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen p-6">
+    <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Markdown Waterfall</h1>
+            <p class="text-gray-600">Watch your content cascade beautifully</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+            <div class="flex flex-wrap gap-3 mb-4">
+                <button id="startBtn" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    Start Waterfall
+                </button>
+                <button id="pauseBtn" class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors">
+                    Pause
+                </button>
+                <button id="resetBtn" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+                    Reset
+                </button>
+                <select id="speedSelect" class="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <option value="100">Slow</option>
+                    <option value="50" selected>Medium</option>
+                    <option value="20">Fast</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="waterfallContainer" class="bg-white rounded-xl shadow-md p-6 space-y-4 min-h-[500px] overflow-hidden">
+            <!-- Content will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const mdFile = 'your-file.md'; // Change to your markdown file path
+        let animationRunning = false;
+        let animationTimeout;
+        let currentIndex = 0;
+        let lines = [];
+        
+        // DOM elements
+        const container = document.getElementById('waterfallContainer');
+        const startBtn = document.getElementById('startBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const speedSelect = document.getElementById('speedSelect');
+        
+        // Load and parse markdown
+        fetch(mdFile)
+            .then(response => response.text())
+            .then(markdown => {
+                // Convert markdown to HTML
+                const html = marked.parse(markdown);
+                
+                // Create temporary div to parse HTML
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = html;
+                
+                // Process all child nodes
+                processNodes(tempDiv.childNodes);
+                
+                // Start with first line visible
+                if (lines.length > 0) {
+                    lines[0].element.classList.add('visible');
+                }
+            })
+            .catch(error => {
+                console.error('Error loading markdown file:', error);
+                container.innerHTML = `<p class="text-red-500">Error loading markdown file: ${error.message}</p>`;
+            });
+        
+        // Process nodes recursively to create waterfall lines
+        function processNodes(nodes) {
+            nodes.forEach(node => {
+                if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+                    // Split text content into paragraphs
+                    const paragraphs = node.textContent.split('\n\n');
+                    paragraphs.forEach(para => {
+                        if (para.trim()) {
+                            const p = document.createElement('p');
+                            p.textContent = para;
+                            p.className = 'waterfall-line text-gray-700 mb-4 border-l-4 border-emerald-500 pl-4';
+                            container.appendChild(p);
+                            lines.push({
+                                element: p,
+                                type: 'paragraph'
+                            });
+                        }
+                    });
+                } else if (node.nodeType === Node.ELEMENT_NODE) {
+                    // Handle different markdown elements
+                    const element = node.cloneNode(true);
+                    let additionalClasses = '';
+                    
+                    if (node.tagName === 'H1') {
+                        additionalClasses = 'text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4';
+                    } else if (node.tagName === 'H2') {
+                        additionalClasses = 'text-2xl font-bold text-gray-800 mb-5 border-l-4 border-blue-500 pl-4';
+                    } else if (node.tagName === 'H3') {
+                        additionalClasses = 'text-xl font-semibold text-gray-700 mb-4 border-l-4 border-blue-400 pl-4';
+                    } else if (node.tagName === 'PRE') {
+                        additionalClasses = 'bg-gray-100 p-4 rounded-lg mb-4 border-l-4 border-red-500 overflow-x-auto';
+                    } else if (node.tagName === 'BLOCKQUOTE') {
+                        additionalClasses = 'italic text-gray-600 border-l-4 border-purple-500 pl-4 mb-4';
+                    } else if (node.tagName === 'UL' || node.tagName === 'OL') {
+                        additionalClasses = 'mb-4 pl-6 space-y-1 border-l-4 border-yellow-500';
+                    } else if (node.tagName === 'LI') {
+                        additionalClasses = 'text-gray-700';
+                    } else if (node.tagName === 'A') {
+                        additionalClasses = 'text-blue-600 hover:underline';
+                    } else {
+                        additionalClasses = 'text-gray-700 mb-4 border-l-4 border-emerald-500 pl-4';
+                    }
+                    
+                    element.className = `waterfall-line ${additionalClasses}`;
+                    container.appendChild(element);
+                    lines.push({
+                        element: element,
+                        type: node.tagName.toLowerCase()
+                    });
+                    
+                    // Process child nodes if any
+                    if (node.childNodes.length > 0) {
+                        processNodes(node.childNodes);
+                    }
+                }
+            });
+        }
+        
+        // Animate lines in waterfall effect
+        function animateWaterfall() {
+            if (currentIndex < lines.length && animationRunning) {
+                lines[currentIndex].element.classList.add('visible');
+                currentIndex++;
+                
+                const speed = parseInt(speedSelect.value);
+                animationTimeout = setTimeout(animateWaterfall, speed);
+            } else {
+                animationRunning = false;
+            }
+        }
+        
+        // Start animation
+        function startAnimation() {
+            if (!animationRunning) {
+                animationRunning = true;
+                animateWaterfall();
+            }
+        }
+        
+        // Pause animation
+        function pauseAnimation() {
+            animationRunning = false;
+            clearTimeout(animationTimeout);
+        }
+        
+        // Reset animation
+        function resetAnimation() {
+            pauseAnimation();
+            currentIndex = 0;
+            lines.forEach(line => {
+                line.element.classList.remove('visible');
+            });
+            if (lines.length > 0) {
+                lines[0].element.classList.add('visible');
+            }
+        }
+        
+        // Event listeners
+        startBtn.addEventListener('click', startAnimation);
+        pauseBtn.addEventListener('click', pauseAnimation);
+        resetBtn.addEventListener('click', resetAnimation);
+        
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space') {
+                e.preventDefault();
+                if (animationRunning) pauseAnimation();
+                else startAnimation();
+            }
+        });
+    </script>
+</body>
