@@ -1,0 +1,10 @@
+# Local development override.
+# Usage: bundle exec jekyll serve --config _config.yml,_config_dev.yml
+#
+# Overrides site.url so that nav links, canonical tags, etc. point at
+# localhost instead of the production domain (https://zachary-florez.github.io)
+# while running the local dev server. Do not use this file for production
+# builds/deploys — only _config.yml is used by GitHub Pages.
+
+url      : "http://localhost:4000"
+baseurl  : ""
