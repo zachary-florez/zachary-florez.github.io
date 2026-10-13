@@ -30,6 +30,8 @@ author:
   # uri              : ""
   email            : "zflorez44@gmail.com" 
   resume           : "/files/Florez_Zachary_Resume_2026.pdf"
+  linkedin_url     : "https://www.linkedin.com/in/zachary-florez"
+  github_url       : "https://github.com/zachary-florez"
   education:
     - degree       : "M.S. SW Engineering (in progress)"
       school       : "The University of Michigan"
