@@ -57,6 +57,10 @@
         <li><a href="{{ author.resume | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>Resume</a></li>
       {% endif %}
 
+      {% if author.linkedin_url %}
+        <li><a href="{{ author.linkedin_url }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+      {% endif %}
+
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.arxiv %}
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
