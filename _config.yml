@@ -29,6 +29,7 @@ author:
   # employer         : "American Express"
   # uri              : ""
   email            : "zflorez44@gmail.com" 
+  resume           : "/files/Florez_Zachary_Resume_2026.pdf"
   education:
     - degree       : "M.S. SW Engineering (in progress)"
       school       : "The University of Michigan"
